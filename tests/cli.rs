@@ -4,7 +4,7 @@ use std::process::Command; // Run programs
 
 #[test]
 fn file_doesnt_exist() -> Result<(), Box<dyn std::error::Error>> {
-    let mut cmd = Command::cargo_bin("grrs")?;
+    let mut cmd = Command::cargo_bin("unblocker")?;
 
     cmd.arg("foobar").arg("test/file/doesnt/exist");
     cmd.assert()
